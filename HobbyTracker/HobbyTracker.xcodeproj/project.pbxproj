@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		46DD718F246AFE5C00366815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD718E246AFE5C00366815 /* AppDelegate.swift */; };
 		46DD7191246AFE5C00366815 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD7190246AFE5C00366815 /* SceneDelegate.swift */; };
-		46DD7193246AFE5C00366815 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DD7192246AFE5C00366815 /* ViewController.swift */; };
 		46DD7196246AFE5C00366815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46DD7194246AFE5C00366815 /* Main.storyboard */; };
 		46DD7198246AFE5E00366815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46DD7197246AFE5E00366815 /* Assets.xcassets */; };
 		46DD719B246AFE5E00366815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46DD7199246AFE5E00366815 /* LaunchScreen.storyboard */; };
+		B1175592246DA4C700BD308C /* FriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1175591246DA4C700BD308C /* FriendsListViewController.swift */; };
+		B1175594246DA50500BD308C /* NewFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1175593246DA50500BD308C /* NewFriendViewController.swift */; };
+		B1175599246DA8AD00BD308C /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1175598246DA8AD00BD308C /* FriendTableViewCell.swift */; };
+		B1CC4263246DB1080088DE6B /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CC4262246DB1080088DE6B /* Friend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46DD718B246AFE5C00366815 /* HobbyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46DD718E246AFE5C00366815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46DD7190246AFE5C00366815 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		46DD7192246AFE5C00366815 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46DD7195246AFE5C00366815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46DD7197246AFE5E00366815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46DD719A246AFE5E00366815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46DD719C246AFE5E00366815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1175591246DA4C700BD308C /* FriendsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewController.swift; sourceTree = "<group>"; };
+		B1175593246DA50500BD308C /* NewFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFriendViewController.swift; sourceTree = "<group>"; };
+		B1175598246DA8AD00BD308C /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		B1CC4262246DB1080088DE6B /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		46DD718D246AFE5C00366815 /* HobbyTracker */ = {
 			isa = PBXGroup;
 			children = (
-				46DD718E246AFE5C00366815 /* AppDelegate.swift */,
-				46DD7190246AFE5C00366815 /* SceneDelegate.swift */,
-				46DD7192246AFE5C00366815 /* ViewController.swift */,
-				46DD7194246AFE5C00366815 /* Main.storyboard */,
-				46DD7197246AFE5E00366815 /* Assets.xcassets */,
-				46DD7199246AFE5E00366815 /* LaunchScreen.storyboard */,
+				B1CC4264246DB1120088DE6B /* Models */,
+				B1175595246DA59400BD308C /* View Controllers */,
+				B117559A246DA90600BD308C /* Views */,
+				B1175596246DA5E300BD308C /* Storyboards */,
+				B1175597246DA60400BD308C /* Resources */,
 				46DD719C246AFE5E00366815 /* Info.plist */,
 			);
 			path = HobbyTracker;
+			sourceTree = "<group>";
+		};
+		B1175595246DA59400BD308C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B1175591246DA4C700BD308C /* FriendsListViewController.swift */,
+				B1175593246DA50500BD308C /* NewFriendViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B1175596246DA5E300BD308C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				46DD7194246AFE5C00366815 /* Main.storyboard */,
+				46DD7199246AFE5E00366815 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B1175597246DA60400BD308C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46DD718E246AFE5C00366815 /* AppDelegate.swift */,
+				46DD7190246AFE5C00366815 /* SceneDelegate.swift */,
+				46DD7197246AFE5E00366815 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B117559A246DA90600BD308C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B1175598246DA8AD00BD308C /* FriendTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B1CC4264246DB1120088DE6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B1CC4262246DB1080088DE6B /* Friend.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46DD7193246AFE5C00366815 /* ViewController.swift in Sources */,
+				B1175592246DA4C700BD308C /* FriendsListViewController.swift in Sources */,
 				46DD718F246AFE5C00366815 /* AppDelegate.swift in Sources */,
+				B1175599246DA8AD00BD308C /* FriendTableViewCell.swift in Sources */,
+				B1CC4263246DB1080088DE6B /* Friend.swift in Sources */,
+				B1175594246DA50500BD308C /* NewFriendViewController.swift in Sources */,
 				46DD7191246AFE5C00366815 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
